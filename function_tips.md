@@ -1,6 +1,6 @@
 ## python code tip
 
-- 괄호안의 공백을 유지하고 공백으로 나누기
+### 괄호안의 공백을 유지하고 공백으로 나누기
 
 https://stackoverflow.com/questions/42070323/split-on-spaces-not-inside-parentheses-in-python
 
@@ -31,5 +31,13 @@ def parenthesis_split(sentence,separator=" ",lparen="(",rparen=")"):
     return([sentence[i:j].strip(separator) for i,j in zip(l,l[1:])])
 
 print(parenthesis_split("blah (blah2 (blah3))|blah4 blah5"))
+```
+
+
+### 한자 찾기
+- https://www.epubguide.net/118
+
+```
+([一-龥豈-龎]+)
 ```
 
